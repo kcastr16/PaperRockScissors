@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Trade+Winds&display=swap" rel="stylesheet">
+    <title>Rock, Paper, Scissors!</title>
+</head>
+<body>
+
+
+    <div class="titles">
+        <h1>Rock, Paper, Scissors!</h1>
+        <h2>Get ready for a brawl!</h2>
+    </div>
+
+    <div class="choices">
+        <button onclick="playGame('rock')">Rock</button>
+        <button onclick="playGame('paper')">Paper</button>
+        <button onclick="playGame('scissors')">Scissors</button>
+        <div id="resultDisplay"></div>
+    </div>
+
+
+
+
+    <div class="player-icon">
+        <div class="player">
+            <img class="player-pfp" src="./assets/vegitopfp.png">
+            <div id="playerDisplay">PLAYER: </div>
+        </div>
+        <div class="player">
+            <img class="player-pfp2" src="./assets/gogeta2.png">
+            <div id="computerDisplay">:COMPUTER </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

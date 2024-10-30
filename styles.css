@@ -1,0 +1,107 @@
+html, body {
+    font-family: Trade Winds;
+    color: white;
+    -webkit-text-stroke: .5px black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./assets/background2.jpg');
+    background-size: cover;
+}
+
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choices {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.choices button {
+    min-width: 160px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(211, 164, 164);
+    transition: background-color 0.5s ease;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.choices button:hover {
+    background-color: green;
+}
+
+
+#playerDisplay, #computerDisplay {
+    font-size: 2.5rem;
+}
+
+#resultDisplay {
+    font-size: 5rem;
+    margin: 0;
+}
+
+
+
+.player-icon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 100px;
+    margin-top: -100px;
+}
+
+/* .player-icon #computerDisplay {
+
+}
+*/
+
+
+.player-icon #resultDisplay {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+
+
+.player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player img {
+    max-width: 350px;
+    max-height: 350px;
+    margin-bottom: -10px;
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    padding-bottom: 10px;
+
+}
+
+#resultDisplay {
+    height: 50px;
+}
+
+.greenText {
+    color: green;
+}
+
+.redText {
+    color: red;
+}
