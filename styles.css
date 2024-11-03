@@ -28,21 +28,29 @@ html, body {
 }
 
 
+/*Button Styling*/
 
 .choices button {
     min-width: 160px;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    background-color: rgb(24, 129, 50);
+    background-color: rgb(255, 187, 0);
     transition: background-color 0.5s ease;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 200px;
+    transition: 0.5s ease;
+}
 
+.choices button:hover {
+    outline: none;
+    border-color: #1279dd;
+    box-shadow:0 0 10px #9ecaed;
 }
 
 
 .choices button:hover {
-    background-color: green;
+    background-color: rgb(3, 110, 12);
 }
 
 
@@ -64,11 +72,6 @@ html, body {
     margin: 100px;
     margin-top: -100px;
 }
-
-/* .player-icon #computerDisplay {
-
-}
-*/
 
 
 .player-icon #resultDisplay {
@@ -118,6 +121,8 @@ html, body {
     text-align: center;
 }
 
+
+/*Moving gradient background.*/
 
 body {
     background: linear-gradient(271deg, #1279dd, #112094, #010314);
