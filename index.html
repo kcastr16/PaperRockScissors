@@ -6,7 +6,8 @@
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icon.png" ></link>
     <title>Rock, Paper, Scissors!</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
     </div>
 
     <div class="choices">
-        <input type="text" id="userInput" onchange="validateInput()">Type Here!</input>
+        <input type="text" id="userInput" onchange="validateInput()" placeholder="Type Here!"></input>
         <button id="submitButton" onclick="playGame()" type="submit" disabled >Submit</button>
         <!-- <button onclick="playGame('paper')">Paper</button>
         <button onclick="playGame('scissors')">Scissors</button> -->
@@ -26,7 +27,7 @@
     </div>
 
 
-
+<!--Player and computer display. Will display choice of player and computer choice.-->
 
     <div class="player-icon">
         <div class="player">

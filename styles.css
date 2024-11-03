@@ -1,5 +1,5 @@
 html, body {
-    font-family: Trade Winds;
+    font-family: Quantico;
     color: white;
     -webkit-text-stroke: .5px black;
     font-weight: bold;
@@ -7,8 +7,9 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 43%, rgba(0,212,255,1) 100%);
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,103,242,1) 47%, rgba(0,212,255,1) 91%);*/
+    
 }
 
 
@@ -16,6 +17,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: larger;
 }
 
 .choices {
@@ -32,7 +34,7 @@ html, body {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    background-color: rgb(211, 164, 164);
+    background-color: rgb(24, 129, 50);
     transition: background-color 0.5s ease;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -104,4 +106,40 @@ html, body {
 
 .redText {
     color: red;
+}
+
+
+#userInput {
+    padding: 14px;
+    position: relative;
+    border: none;
+    border-radius: 200px;
+    display: flex;
+    text-align: center;
+}
+
+
+body {
+    background: linear-gradient(271deg, #1279dd, #112094, #010314);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
 }
