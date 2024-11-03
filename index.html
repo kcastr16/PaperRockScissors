@@ -18,9 +18,10 @@
     </div>
 
     <div class="choices">
-        <button onclick="playGame('rock')">Rock</button>
-        <button onclick="playGame('paper')">Paper</button>
-        <button onclick="playGame('scissors')">Scissors</button>
+        <input type="text" id="userInput" onchange="validateInput()">Type Here!</input>
+        <button id="submitButton" onclick="playGame()" type="submit" disabled >Submit</button>
+        <!-- <button onclick="playGame('paper')">Paper</button>
+        <button onclick="playGame('scissors')">Scissors</button> -->
         <div id="resultDisplay"></div>
     </div>
 
@@ -34,7 +35,7 @@
         </div>
         <div class="player">
             <img class="player-pfp2" src="./assets/gogeta2.png">
-            <div id="computerDisplay">:COMPUTER </div>
+            <div id="computerDisplay">COMPUTER: </div>
         </div>
 
     </div>

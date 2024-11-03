@@ -3,7 +3,29 @@ const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 
-function playGame(playerChoice) {
+
+function validateInput() {
+    let input = document.getElementById('userInput').value;
+    let inputLower = input.toLowerCase();
+    
+
+    if (inputLower !== choices[0] && inputLower !== choices[1] && inputLower !== choices[2])  {
+        
+        alert("This is not a valid choice.");
+
+    } else {
+        let button = document.getElementById("submitButton");
+        button.disabled = false;
+    }
+}
+
+
+
+
+function playGame() {
+
+
+    let playerChoice = document.getElementById('userInput').value;
 
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     let result = "";
